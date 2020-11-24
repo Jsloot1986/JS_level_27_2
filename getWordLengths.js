@@ -1,9 +1,5 @@
 const getWordLengths = function(someWords) {
-    const array = [];
-    return someWords.reduce((prev, nxt) =>{
-        prev[nxt] = (prev[nxt]+1)||1;
-        return array;
-    }, {});
+   return someWords.map(word => word.length);
 };
 
 module.exports = getWordLengths;

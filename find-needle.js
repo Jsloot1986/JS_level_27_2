@@ -1,6 +1,6 @@
-const findNeedle = function(words) {
-    const indexOfNeedle = words.findIndex(words => words === "needle") 
-    return indexOfNeedle;
+const findNeedle = function(words, wordToBeFound) {
+   return words.indexOf(wordToBeFound) 
+    
 };
   
   module.exports = findNeedle;
